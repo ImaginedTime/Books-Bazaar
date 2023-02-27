@@ -97,11 +97,15 @@ body {
 
 .home-container h1 {
     font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px black;
     margin-bottom: 20px;
 }
 
 .home-container p {
-    font-size: 20px;
+    font-size: 28px;
+    color: white;
+    text-shadow: 0 0 10px black;
     margin-bottom: 40px;
 }
 
@@ -208,6 +212,10 @@ body {
     background-color: #f2f2f2;
 }
 
+.best-sellers{
+    background-color: #fff;
+}
+
 .book-cards {
     display: flex;
     flex-wrap: wrap;
@@ -221,7 +229,7 @@ body {
     display: inline-block;
     overflow: hidden;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     text-align: center;
     transition: 0.3s ease-in-out;
