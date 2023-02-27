@@ -251,7 +251,6 @@ body {
 }
 
 .book-card p {
-    font-size: 1.2em;
     color: #333;
     margin: 20px;
 }
@@ -263,13 +262,13 @@ body {
 }
 
 .book-card-destination {
-    font-size: 18px;
+    font-size: 1.2em;
     color: #999;
     margin: 20px;
 }
 
 .book-card-description {
-    font-size: 14px;
+    font-size: 1em;
     color: #333;
     margin: 20px;
     margin-bottom: 40px;
