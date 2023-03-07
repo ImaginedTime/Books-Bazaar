@@ -14,6 +14,10 @@ body {
     background-color: #f2f2f2;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -70,6 +74,18 @@ body {
     height: 3px;
     margin: 5px;
     background-color: black;
+}
+
+.active:first-child{
+    transform-origin: 30% 50%;
+    transform: rotate(45deg);
+}
+.active:nth-child(2){
+    display: none;
+}
+.active:last-child{
+    transform-origin: 40% 20%;
+    transform: rotate(-45deg) translate(1px, -3px);
 }
 
 
@@ -283,6 +299,7 @@ body {
     border-radius: 50px;
     text-decoration: none;
     margin: 20px;
+    cursor: pointer;
 }
 
 
