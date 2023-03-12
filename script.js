@@ -19,6 +19,14 @@ $(document).ready(function () {
     });
 });
 
+$(document).scroll(function () {
+    let y = $(this).scrollTop();
+    if (y > 300)
+        $(".back-to-top").fadeIn();
+    else
+        $(".back-to-top").fadeOut();
+});
+
 // to animate the numbers animation
 const interval = setInterval(check_if_in_view, 50);
 
