@@ -13,7 +13,7 @@ body {
     background-color: #f2f2f2;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -22,7 +22,7 @@ body::-webkit-scrollbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 5px 30px;
     position: fixed;
     top: 0;
     left: 0;
@@ -38,14 +38,13 @@ body::-webkit-scrollbar{
 }
 
 .logo img {
-    width: min(50px, 17vw);
-    height: min(50px, 17vw);
+    width: 50px;
+    height: 50px;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-between;
-    width: 50%;
 }
 
 .nav-links a {
@@ -53,7 +52,7 @@ body::-webkit-scrollbar{
     color: black;
     text-decoration: none;
     display: block;
-    padding: 20px;
+    padding: 20px 30px;
     transition: 0.2s ease-in-out;
     border-radius: 9999px;
 }
@@ -73,16 +72,19 @@ body::-webkit-scrollbar{
     height: 3px;
     margin: 5px;
     background-color: black;
+    transition: 0.3s ease-in-out;
 }
 
-.active:first-child{
+.active:first-child {
     transform-origin: 30% 50%;
     transform: rotate(45deg);
 }
-.active:nth-child(2){
+
+.active:nth-child(2) {
     display: none;
 }
-.active:last-child{
+
+.active:last-child {
     transform-origin: 40% 20%;
     transform: rotate(-45deg) translate(1px, -3px);
 }
@@ -231,24 +233,24 @@ body::-webkit-scrollbar{
     background-color: #f2f2f2;
 }
 
-.best-sellers{
+.best-sellers {
     background-color: #fff;
 }
 
 .book-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .book-card {
-    width: 30%;
+    width: 25%;
     height: 500px;
     margin: 1%;
     display: inline-block;
     overflow: hidden;
     background-color: #fff;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
     transition: 0.3s ease-in-out;
@@ -290,11 +292,22 @@ body::-webkit-scrollbar{
     font-size: 1em;
     color: #333;
     margin: 20px;
-    margin-bottom: 40px;
+    height: 90px;
+    overflow: scroll;
+}
+
+.book-card-description::-webkit-scrollbar {
+    display: none;
+}
+
+
+.book-card-link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .book-card-link {
-    display: inline-block;
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
@@ -304,8 +317,6 @@ body::-webkit-scrollbar{
     margin: 20px;
     cursor: pointer;
 }
-
-
 
 /* Contact Us */
 #contact-us {
@@ -374,7 +385,6 @@ body::-webkit-scrollbar{
     color: #edd;
     padding: 20px;
     width: 25%;
-    height: 50%;
     padding: 40px;
 }
 
@@ -440,7 +450,7 @@ footer {
     right: 20px;
     background-color: #333;
     color: #fff;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border-radius: 50%;
     font-size: 24px;
 }
@@ -451,7 +461,10 @@ footer {
 }
 
 @media only screen and (min-width: 769px) {
-    .nav-links{
+    .navbar{
+        align-items: center;
+    }
+    .nav-links {
         display: flex;
     }
 }
@@ -478,8 +491,13 @@ footer {
         font-size: 16px;
     }
 
+    .home-container{
+        width: 90%;
+    }
+
     #home .part2 {
         width: 100%;
+        height: 90vh;
         flex-direction: column;
         gap: 30px;
     }
@@ -500,7 +518,7 @@ footer {
         width: 80%;
     }
 
-    .section-header{
+    .section-header {
         margin-bottom: 20px;
     }
 
@@ -522,10 +540,11 @@ footer {
         width: 100%;
     }
 
-    .about-stats h2{
+    .about-stats h2 {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
     .about-achievements h2,
     .about-reviews h2 {
         margin-top: 40px;
@@ -585,5 +604,11 @@ footer {
 
     .demo-links {
         text-align: left;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #home .part2 {
+        height: 80vh;
     }
 }

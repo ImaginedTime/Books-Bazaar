@@ -2,7 +2,6 @@ $(document).ready(function () {
     $(".hamburger").click(function () {
         $(".nav-links").slideToggle();
         $(".line").toggleClass("active");
-
     });
 
     // selecting the add button
@@ -17,6 +16,9 @@ $(document).ready(function () {
             this.style.backgroundColor = "#333";
         }
     });
+
+    $(".contact-info").css("height", 0.8 * $(".contact-us-inputs-container").width() + "px");
+
 });
 
 $(document).scroll(function () {
@@ -24,7 +26,7 @@ $(document).scroll(function () {
     if (y > 300)
         $(".back-to-top").fadeIn();
     else
-        $(".back-to-top").fadeOut();
+        $(".back-to-top").fadeOut();        
 });
 
 // to animate the numbers animation
