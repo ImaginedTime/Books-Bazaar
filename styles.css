@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 5px 30px;
     position: fixed;
     top: 0;
@@ -34,7 +34,6 @@ body::-webkit-scrollbar {
 
 .logo {
     display: flex;
-    align-items: center;
 }
 
 .logo img {
@@ -63,6 +62,7 @@ body::-webkit-scrollbar {
 }
 
 .hamburger {
+    margin-top: 10px;
     display: none;
     cursor: pointer;
 }
@@ -175,7 +175,7 @@ body::-webkit-scrollbar {
 
 /* About Us */
 #about-us {
-    padding: 40px 0;
+    padding: 80px 0 30px 0;
     background-color: white;
 }
 
@@ -229,7 +229,7 @@ body::-webkit-scrollbar {
 
 /* books */
 .books {
-    padding: 80px 0;
+    padding: 80px 0 30px 0;
     background-color: #f2f2f2;
 }
 
@@ -460,15 +460,6 @@ footer {
     color: #333;
 }
 
-@media only screen and (min-width: 769px) {
-    .navbar{
-        align-items: center;
-    }
-    .nav-links {
-        display: flex;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .navbar {
         justify-content: space-between;
@@ -610,5 +601,14 @@ footer {
 @media only screen and (max-width: 450px) {
     #home .part2 {
         height: 80vh;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .navbar{
+        align-items: center;
+    }
+    .nav-links {
+        display: flex;
     }
 }

@@ -5,21 +5,20 @@ $(document).ready(function () {
     });
 
     // selecting the add button
-    $(".book-card a:not([href='#'])").click(function () {
+    $(".add-button").click(function () {
         let content = this.innerHTML;
         if (content == "Add +") {
-            this.innerHTML = "Added";
+            this.innerText = "Added";
             this.style.backgroundColor = "#4f4";
         }
         else {
-            this.innerHTML = "Add +";
+            this.innerText = "Add +";
             this.style.backgroundColor = "#333";
         }
     });
-
-    $(".contact-info").css("height", 0.8 * $(".contact-us-inputs-container").width() + "px");
-
 });
+
+$(".contact-info").css("height", $(".contact-us-inputs-container").height() + "px");
 
 $(document).scroll(function () {
     let y = $(this).scrollTop();
