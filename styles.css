@@ -611,4 +611,8 @@ footer {
     .nav-links {
         display: flex;
     }
+
+    .nav-links a{
+        display: inline;
+    }
 }
